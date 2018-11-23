@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewStyled">
+        <attr name="fontName_text" format="string"/>
+        <attr name="fancyText_text" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextStyled">
+        <attr name="fontName_edit" format="string"/>
+        <attr name="fancyText_edit" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+    <declare-styleable name="Button">
+        <attr name="is_fullscreen" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsDividerWidth" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsPaddingMiddle" format="boolean" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsTabTextSize" format="dimension" />
+        <attr name="pstsTabTextColor" format="reference" />
+        <attr name="pstsTabTextStyle" format="reference">
+            <flag name="normal" value="0x0" />
+            <flag name="bold" value="0x1" />
+            <flag name="italic" value="0x2" />
+        </attr>
+        <attr name="pstsTabTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextAlpha" format="integer" />
+        <attr name="pstsTabTextFontFamily" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ViewPasswordInput">
+        <attr name="hiddenPassIcon" format="integer" />
+        <attr name="shownPassIcon" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="InputTextWithValidation">
+        <attr name="inputTextColor" format="integer" />
+        <attr name="inputBackgroundTint" format="integer" />
+        <attr name="inputLabelTextColor" format="integer" />
+        <attr name="android:inputType" />
+        <attr name="isEditable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputPasswordWithValidation">
+        <attr name="passwordTextColor" format="integer" />
+        <attr name="passwordLabelColor" format="integer" />
+        <attr name="showRevealIcon" format="boolean" />
+        <attr name="showPassIcon" format="integer" />
+        <attr name="hidePassIcon" format="integer" />
+    </declare-styleable>
+
+</resources>
