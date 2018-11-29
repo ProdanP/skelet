@@ -14,6 +14,10 @@ import android.widget.RelativeLayout;
 import com.google.gson.Gson;
 
 import butterknife.ButterKnife;
+import eu.bufa.prodan.myapplication.utils.LoadingView;
+import eu.bufa.prodan.myapplication.utils.LocalBroadCastReceiver;
+import eu.bufa.prodan.myapplication.utils.NavigationBar;
+import eu.bufa.prodan.myapplication.utils.StatusBarUtil;
 import me.yokeyword.fragmentation.SupportActivity;
 
 public abstract class BaseFragmentActivity extends SupportActivity implements BaseInterface {

@@ -15,12 +15,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.ebs.psalms.R;
-
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import eu.bufa.prodan.myapplication.R;
 
 public class InputPasswordWithValidation extends LinearLayout {
     @BindView(R.id.input_password)

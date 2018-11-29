@@ -6,4 +6,7 @@
 
     <color name="psts_background_tab_pressed">#1AFFFFFF</color>
     <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+    <color name="inputLabelColor">#615454</color>
+    <color name="editTextColor">#d65f5f</color>
+    <color name="editTextLineTintColor">#9ae1a7</color>
 </resources>

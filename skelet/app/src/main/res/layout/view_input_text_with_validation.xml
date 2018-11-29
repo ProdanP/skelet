@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.babaliste.baseutility.text_views.TextViewStyled
+        android:id="@+id/input_text_label"
+        android:textDirection="locale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_9sdp"
+        app:fontName_text="@string/montserrat_light" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginStart="@dimen/_minus3sdp"
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorTextAppearance="@style/error_appearance"
+        app:errorEnabled="false"
+        app:hintEnabled="false">
+
+        <com.babaliste.baseutility.text_views.EditTextStyled
+            android:textDirection="locale"
+            android:id="@+id/input_text"
+            android:textSize="@dimen/_11sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_6sdp"
+            android:singleLine="true"
+            app:fontName_edit="@string/montserrat_regular"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

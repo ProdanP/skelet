@@ -4,10 +4,6 @@ import android.graphics.Typeface;
 
 import java.util.HashMap;
 
-/**
- * Created by barbaros.vasile on 8/11/2017.
- */
-
 public class FontManager {
     private static final FontManager ourInstance = new FontManager();
 

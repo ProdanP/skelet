@@ -14,13 +14,13 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.babaliste.baseutility.utils.LoadingView;
-import com.babaliste.baseutility.utils.LocalBroadCastReceiver;
-import com.babaliste.baseutility.utils.NavigationBar;
-import com.babaliste.baseutility.utils.StatusBarUtil;
 import com.google.gson.Gson;
 
 import butterknife.ButterKnife;
+import eu.bufa.prodan.myapplication.utils.LoadingView;
+import eu.bufa.prodan.myapplication.utils.LocalBroadCastReceiver;
+import eu.bufa.prodan.myapplication.utils.NavigationBar;
+import eu.bufa.prodan.myapplication.utils.StatusBarUtil;
 import me.yokeyword.fragmentation_swipeback.SwipeBackFragment;
 
 public abstract class BaseFragmentSwipeBack extends SwipeBackFragment implements BaseInterface {

@@ -10,8 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
 
-import com.babaliste.baseutility.R;
-
+import eu.bufa.prodan.myapplication.R;
 
 public class Button extends RelativeLayout {
 
