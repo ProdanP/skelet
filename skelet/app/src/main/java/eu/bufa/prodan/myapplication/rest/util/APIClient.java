@@ -1,15 +1,11 @@
 package eu.bufa.prodan.myapplication.rest.util;
-
-import com.ebs.psalms.ApplicationController;
-import com.ebs.psalms.BuildConfig;
-import com.ebs.psalms.rest.api_service.Config;
-import com.ebs.psalms.rest.api_service.util.interceptors.AuthenticationInterceptor;
-import com.ebs.psalms.rest.api_service.util.interceptors.ConnectivityInterceptor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.util.concurrent.TimeUnit;
 
+import eu.bufa.prodan.myapplication.BuildConfig;
+import eu.bufa.prodan.myapplication.rest.util.interceptors.AuthenticationInterceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -36,7 +32,7 @@ public class APIClient {
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
             OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 
-            httpClient.addInterceptor(new ConnectivityInterceptor(ApplicationController.getInstance().getContext()));
+            //httpClient.addInterceptor(new ConnectivityInterceptor(ApplicationController.getInstance().getContext()));
             httpClient.addInterceptor(new AuthenticationInterceptor());
             if(BuildConfig.DEBUG){
                 httpClient.addInterceptor(logging);
@@ -49,7 +45,7 @@ public class APIClient {
                     .create();
 
             retrofit = new Retrofit.Builder()
-                    .baseUrl(Config.ROOT_URL)
+                    //.baseUrl(Config.ROOT_URL)
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .addCallAdapterFactory(rxAdapter)
                     .client(httpClient.build())

@@ -1,11 +1,10 @@
 package eu.bufa.prodan.myapplication.rest.util;
 
-import com.ebs.psalms.rest.api_service.util.model.ErrorResponse;
-import com.ebs.psalms.utils.constants.ErrorConstants;
 import com.google.gson.Gson;
 
 import java.io.IOException;
 
+import eu.bufa.prodan.myapplication.rest.util.model.ErrorResponse;
 import okhttp3.ResponseBody;
 import retrofit2.HttpException;
 
@@ -30,9 +29,9 @@ public class ExceptionStatusCode {
             if (responseBody != null) {
                 try {
                     ErrorResponse errorResponse = new Gson().fromJson(responseBody.string(), ErrorResponse.class);
-                    if (errorResponse.getError().getMessage().equals(ErrorConstants.TOKEN_EXPIRED)) {
+                    /*if (errorResponse.getError().getMessage().equals(ErrorConstants.TOKEN_EXPIRED)) {
                         isTokenExpiredException = true;
-                    }
+                    }*/
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
